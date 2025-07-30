@@ -52,6 +52,7 @@ A user types a sentence reflecting their thoughts or feelings.
 
 ## 📁 Project File Structure
 
+```
 emotion-verse-app/
 │
 ├── api/                        # FastAPI backend (inference API)
@@ -84,7 +85,7 @@ emotion-verse-app/
 ├── requirements.txt            # Python dependencies
 ├── README.md                   # Project overview
 └── .env                        # Environment variables (e.g., paths, secrets)
-
+```
 
 
 
