@@ -50,40 +50,42 @@ A user types a sentence reflecting their thoughts or feelings.
 - [ ] Create a searchable, tagged Bible verse database
 - [ ] Connect ML i
 
-## File Structure
+## 📁 Project File Structure
 
-bible-verse-finder/
+emotion-verse-app/
 │
-├── api/ # FastAPI backend (inference API)
-│ ├── main.py # Entry point for FastAPI server
-│ ├── models/ # Trained model files, tokenizers, configs
-│ ├── services/ # Inference logic
-│ │ ├── emotion.py # Emotion classification logic
-│ │ ├── context.py # Context classification logic
-│ │ ├── verse_matcher.py # Bible verse matching logic
-│ ├── schemas.py # Pydantic request/response schemas
-│ └── utils.py # Helper functions (e.g., text cleaning)
+├── api/                        # FastAPI backend (inference API)
+│   ├── main.py                 # Entry point for FastAPI server
+│   ├── models/                 # Trained model files, tokenizers, configs
+│   ├── services/               # Inference logic
+│   │   ├── emotion.py          # Emotion classification logic
+│   │   ├── context.py          # Context classification logic
+│   │   ├── verse_matcher.py    # Bible verse matching logic
+│   ├── schemas.py              # Pydantic request/response schemas
+│   └── utils.py                # Helper functions (e.g., text cleaning)
 │
-├── data/ # Training and application data
-│ ├── goemotions/ # Emotion dataset (GoEmotions)
-│ ├── context_labels.csv # Custom context-labeled input data
-│ └── verses.json # Bible verses tagged by emotion/context
+├── data/                       # Training and application data
+│   ├── goemotions/             # Emotion dataset (GoEmotions)
+│   ├── context_labels.csv      # Custom context-labeled input data
+│   └── verses.json             # Bible verses tagged by emotion/context
 │
-├── ml/ # ML training pipeline
-│ ├── train_emotion.py # Script to fine-tune emotion classifier
-│ ├── train_context.py # Script to fine-tune context classifier
-│ ├── evaluate.py # Evaluation & metrics
-│ └── utils.py # Dataset loading, preprocessing, etc.
+├── ml/                         # ML training pipeline
+│   ├── train_emotion.py        # Script to fine-tune emotion classifier
+│   ├── train_context.py        # Script to fine-tune context classifier
+│   ├── evaluate.py             # Evaluation & metrics
+│   └── utils.py                # Dataset loading, preprocessing, etc.
 │
-├── frontend/ # React/Next.js frontend (optional)
-│ └── (create-next-app here)
+├── frontend/                   # React/Next.js frontend (optional)
+│   └── (create-next-app here)
 │
-├── notebooks/ # Jupyter notebooks for exploration
-│ └── context_annotation.ipynb
+├── notebooks/                  # Jupyter notebooks for exploration
+│   └── context_annotation.ipynb
 │
-├── requirements.txt # Python dependencies
-├── README.md # Project overview
-└── .env # Environment variables (e.g., paths, secrets)
+├── requirements.txt            # Python dependencies
+├── README.md                   # Project overview
+└── .env                        # Environment variables (e.g., paths, secrets)
+
+
 
 
 ---
